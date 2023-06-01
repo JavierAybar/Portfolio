@@ -32,6 +32,7 @@ body {
 
 .logo {
   font-size: 1.125rem;
+  font-weight: 700;
   color: rgba(96, 112, 255, 1);
 }
 
@@ -75,5 +76,35 @@ main {
 }
 
 .social-media > * {
+  display: flex;
+}
+
+.social-media-icon {
   margin-right: 19px;
+}
+
+a,
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    background-image: url(images/header-shapes\ mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 42.125rem;
+  }
+
+  body {
+    background-image: url(images/header-background-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 42.125rem;
+  }
+
+  .toolbar {
+    max-width: 100%;
+  }
 }
