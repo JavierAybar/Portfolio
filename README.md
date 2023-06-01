@@ -53,9 +53,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Hello-Microverse] <a name="about-project"></a>
+# 📖 [Porfolio] <a name="about-project"></a>
 
- -Hello-Microverse project is about setup linters and test .gitignore.
+ -The Portfolio project is about creating pages with mobile-first.
 
 
 ## 🛠 Built With <a name="built-with"></a>
