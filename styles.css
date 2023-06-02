@@ -92,7 +92,7 @@ body {
   color: #7f8cff;
 }
 
-main {
+.headline {
   background-image: url("images/header-shapes\ mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -199,9 +199,9 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   color: #344563;
-  gap: 12px;
-  width: 236px;
+  width: 260px;
   height: 32px;
 }
 
@@ -250,6 +250,9 @@ ul {
 }
 
 .active-dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 303px;
   height: 72.72px;
   padding-top: 25px;
@@ -263,4 +266,13 @@ ul {
   background-color: #f7f7f9;
   border-radius: 8px;
   margin-top: 12px;
+}
+
+.arrow-icon {
+  width: 16px;
+  padding-top: 7px;
+}
+
+.icon-list {
+  list-style: disc;
 }
