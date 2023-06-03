@@ -9,32 +9,34 @@
   </head>
   <body>
     <!--Header-->
-    <header class="toolbar">
-      <div>
-        <a href="#" class="logo font-poppins">My Logo</a>
-      </div>
-      <nav>
+    <header>
+      <section class="toolbar">
         <div>
-          <button class="btn-menu-flex btn-menu-style">
-            <img src="images/btn-menu.svg" alt="hamburger button" />
-          </button>
+          <a href="#" class="logo">My Logo</a>
         </div>
-      </nav>
+        <nav>
+          <div>
+            <button class="btn-hamburger">
+              <img src="images/btn-menu.svg" alt="hamburger button" />
+            </button>
+          </div>
+        </nav>
+      </section>
     </header>
     <!--Headline-->
     <main>
-      <section class="headline">
-        <section class="hero">
-          <h1 class="main-text font-poppins">
+      <section class="headline-container">
+        <section class="hero-about-sections">
+          <h1 class="main-text">
             I’m Javier.<br />Glad to see you!
           </h1>
-          <p class="main-paragraph font-poppins">
+          <p class="main-paragraph">
             I’m a software developer! I can help you build a product , feature
             or website Look through some of my work and experience! If you like
             what you see and have a project you need coded, don’t hesitate to
             contact me.
           </p>
-          <p class="main-connect font-poppins">LET’S CONNECT</p>
+          <p class="main-connect">LET’S CONNECT</p>
           <!--Social Media-->
           <section class="social-media">
             <ul>
@@ -234,8 +236,9 @@
         </section>
       </section>
       <!--About-->
+      <section class="backgroud-about">
       <article class="about-section">
-        <section class="hero">
+        <section class="hero-about-sections">
           <h1 class="main-text">About<br />Myself</h1>
           <p class="main-paragraph">
             Hello! I’m a software developer! I can help you build a product ,
@@ -284,8 +287,9 @@
       <!--Languages-->
       <section class="languages-flex">
         <ul class="languages">
-          <ul>
-            <li class="active-dropdown">
+
+          <li>
+            <ul class="active-dropdown">
               <p>Languages</p>
               <figure>
                 <img
@@ -294,6 +298,7 @@
                   alt="arrow icon"
                 />
               </figure>
+              </ul>
             </li>
 
             <li class="dropdown-menu">
@@ -308,7 +313,7 @@
             <li class="dropdown-menu">
               <img src="images/css-icon.png" alt="css icon" /> CSS
             </li>
-          </ul>
+          </li>
           <li class="active-dropdown">
             <p>Frameworks</p>
             <figure>
@@ -323,6 +328,7 @@
           </li>
         </ul>
       </section>
+    </section>
     </main>
   </body>
 </html>

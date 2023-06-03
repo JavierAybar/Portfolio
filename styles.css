@@ -9,20 +9,7 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  background-image: url("images/header-background-mobile.png");
-  background-repeat: no-repeat;
-  justify-content: space-between;
-}
-
-.toolbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 24px;
-  max-width: 375px;
-  height: 48px;
+  background-color: #e5e5e5;
 }
 
 * {
@@ -60,7 +47,16 @@ body {
   border: 1px solid #c1c7d0;
 }
 
-/* Header-main */
+/* Header */
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  height: 48px;
+  background-color: #ffff;
+}
 
 .logo {
   font-size: 1.125rem;
@@ -68,9 +64,27 @@ body {
   color: rgba(96, 112, 255, 1);
 }
 
-.btn-menu-style {
+.btn-hamburger {
   border: transparent;
   background: transparent;
+}
+
+/* Headline */
+
+.headline-container {
+  background-image: url("images/header-shapes\ mobile.png"), url("images/header-background-mobile.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: contain, cover;
+  border-radius: 0 0 0 10%;
+}
+
+.hero-about-sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 670px;
 }
 
 .main-text {
@@ -92,17 +106,7 @@ body {
   color: #7f8cff;
 }
 
-.headline {
-  background-image: url("images/header-shapes\ mobile.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero > * {
+.hero-about-sections > * {
   padding-bottom: 12px;
   width: 327px;
 }
@@ -121,27 +125,7 @@ ul {
   list-style: none;
 }
 
-@media screen and (max-width: 768px) {
-  main {
-    background-image: url(images/header-shapes\ mobile.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 42.125rem;
-  }
-
-  body {
-    background-image: url(images/header-background-mobile.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 42.125rem;
-  }
-
-  .toolbar {
-    max-width: 100%;
-  }
-}
-
-/* Cards */
+/* Works */
 
 .cards-container-flex {
   display: flex;
@@ -152,6 +136,7 @@ ul {
 
 .cards {
   display: grid;
+  grid-template-columns: auto;
   padding: 114px 24px;
   gap: 88px;
   width: 375px;
@@ -167,6 +152,7 @@ ul {
   gap: 12px;
   width: 327px;
   height: 552px;
+  background-color: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
@@ -190,8 +176,8 @@ ul {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 2rem;
+  line-height: 2.75rem;
   color: #172b4d;
 }
 
@@ -208,8 +194,8 @@ ul {
 .paragraph-card {
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
   color: #344563;
 }
 
@@ -230,6 +216,15 @@ ul {
 }
 
 /* About */
+
+.backgroud-about {
+  background-image: url(images/about-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 1263px;
+}
+
 .about-section {
   display: flex;
   align-items: center;
@@ -275,4 +270,24 @@ ul {
 
 .icon-list {
   list-style: disc;
+}
+
+/* Media querys */
+
+@media screen and (min-width: 768px) {
+  .headline-container {
+    background-image: url("images/Header-background-shapes-desktop.svg"), url("images/header-background-mobile.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: contain, cover;
+    border-radius: 0 0 0 10%;
+  }
+
+  .hero-about-sections > * {
+    width: 65vw;
+  }
+
+  body {
+    font-size: 20px;
+  }
 }
