@@ -24,6 +24,7 @@ body {
   margin-top: 22px;
   gap: 10px;
   color: #396df2;
+  font-size: 17px;
 }
 
 .btn:enabled {
@@ -280,14 +281,75 @@ ul {
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
     background-size: contain, cover;
-    border-radius: 0 0 0 10%;
   }
 
   .hero-about-sections > * {
     width: 65vw;
   }
 
-  body {
-    font-size: 20px;
+  html {
+    font-size: 22px;
   }
+}
+
+/* Contac me */
+
+.contact-me__container {
+  padding: 90px 24px;
+  border-top-left-radius: 90px;
+  background-image: url("images/contact\ form\ shapes-mobile.svg"), url("images/Contact\ me.png");
+  background-size: contain, cover;
+  background-position: right;
+  background-clip: padding-box, padding-box;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: stretch;
+  justify-content: center;
+  color: #fff;
+}
+
+.contact-me__title {
+  padding-top: 103px;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.contact-me__para {
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+  margin: 12px 0 52px 0;
+}
+
+.contact-me__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-me__form--input {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  min-width: 100%;
+  width: 100%;
+  padding: 12px 38px 12px 15px;
+  margin-bottom: 20px;
+  color: #172b4d;
+}
+
+.contact-me__form--textarea {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  width: 100%;
+  height: 30vh;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  padding: 12px 38px 12px 15px;
+  margin-bottom: 22px;
 }
