@@ -15,18 +15,21 @@
           <a href="#" class="logo">My Logo</a>
         </div>
         <nav>
-          <div>
             <button class="btn-hamburger">
               <img src="images/btn-menu.svg" alt="hamburger button" />
             </button>
-          </div>
+            <ul class="toolbar-menu-desktop">
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
       </section>
     </header>
     <!--Headline-->
     <main>
       <section class="headline-container">
-        <section class="hero-about-sections">
+        <section class="hero-sections">
           <h1 class="main-text">
             I’m Javier.<br />Glad to see you!
           </h1>
@@ -75,7 +78,7 @@
       <section class="cards-container-flex">
         <section class="cards">
           <article class="card">
-            <figure>
+            <figure class="cards-container-img card-order">
               <img
                 class="img-card"
                 src="images/SnapshootPortfolio(1).svg"
@@ -115,7 +118,7 @@
           </article>
           <!---->
           <article class="card">
-            <figure>
+            <figure class="cards-container-img">
               <img
                 class="img-card"
                 src="images/Snapshoot Portfolio (2).svg"
@@ -155,7 +158,7 @@
           </article>
           <!---->
           <article class="card">
-            <figure>
+            <figure class="cards-container-img card-order">
               <img
                 class="img-card"
                 src="images/Snapshoot Portfolio (3).svg"
@@ -195,7 +198,7 @@
           </article>
           <!---->
           <article class="card">
-            <figure>
+            <figure class="cards-container-img">
               <img
                 class="img-card"
                 src="images/Snapshoot Portfolio (4).svg"
@@ -237,16 +240,15 @@
       </section>
       <!--About-->
       <section class="backgroud-about">
-      <article class="about-section">
-        <section class="hero-about-sections">
-          <h1 class="main-text">About<br />Myself</h1>
-          <p class="main-paragraph">
+      <article class="about-sections">
+          <h1 class="about-text">About Myself</h1>
+          <p class="about-paragraph">
             Hello! I’m a software developer! I can help you build a product ,
             feature or website Look through some of my work and experience! If
             you like what you see and have a project you need coded, don’t
             hesitate to contact me.
           </p>
-          <p class="main-connect font-poppins">LET’S CONNECT</p>
+          <p class="about-connect">LET’S CONNECT</p>
           <!--Social Media-->
           <section class="social-media">
             <ul>
@@ -279,17 +281,16 @@
               </li>
             </ul>
           </section>
-          <div>
+          <div class="about-btn-container">
             <button class="btn">Get my resume</button>
           </div>
-        </section>
       </article>
       <!--Languages-->
       <section class="languages-flex">
         <ul class="languages">
 
-          <li>
-            <ul class="active-dropdown">
+          
+            <li class="active-dropdown">
               <p>Languages</p>
               <figure>
                 <img
@@ -298,9 +299,9 @@
                   alt="arrow icon"
                 />
               </figure>
-              </ul>
             </li>
-
+            
+            <div class="about-languages-container">
             <li class="dropdown-menu">
               <img src="images/javascript-icon.png" alt="javascript icon" />
               JavaScript
@@ -314,6 +315,7 @@
               <img src="images/css-icon.png" alt="css icon" /> CSS
             </li>
           </li>
+        </div>
           <li class="active-dropdown">
             <p>Frameworks</p>
             <figure>
@@ -330,6 +332,7 @@
       </section>
     </section>
     <!-- Contact me -->
+    <section class="contact-me__desktop-background">
     <section class="contact-me__container">
       <h2 class="contact-me__title">
         Contact me
@@ -342,9 +345,10 @@
         <input class="contact-me__form--input" name="name" type="text" maxlength="50" placeholder="Lorem Ipsum" required>
         <input class="contact-me__form--input" name="email" type="email" placeholder="loremipsum@gmail.com" required>
         <textarea class="contact-me__form--textarea" name="message" id="" maxlength="500" placeholder="Write your message here..." required></textarea>
-        <button class="btn">Get in touch</button>
+        <button class="btn contact-me__btn-desktop">Get in touch</button>
       </form>
     </section>
+  </section>
     </main>
   </body>
 </html>
