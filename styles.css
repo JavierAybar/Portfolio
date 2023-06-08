@@ -77,8 +77,7 @@ body {
 /* Headline */
 
 .headline-container {
-  background-image: url("images/header-shapes\ mobile.png"),
-    url("images/header-background-mobile.png");
+  background-image: url("images/header-shapes\ mobile.png"), url("images/header-background-mobile.png");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: contain, cover;
