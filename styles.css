@@ -146,7 +146,7 @@ ul {
 
 .cards {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   padding: 114px 24px;
   gap: 88px;
   width: 375px;
@@ -259,7 +259,7 @@ ul {
   align-items: center;
   width: 303px;
   height: 72.72px;
-  padding-top: 25px;
+  padding: 5% 7% 0 0;
 }
 
 .dropdown-menu {
@@ -273,12 +273,21 @@ ul {
 }
 
 .arrow-icon {
-  width: 16px;
+  width: 100%;
+  height: auto;
   padding-top: 7px;
+}
+
+.arrow-icon-rotate {
+  transform: rotate(90deg);
 }
 
 .icon-list {
   list-style: disc;
+}
+
+.about-icon-container {
+  padding: 0 2%;
 }
 
 /* Contact me */
@@ -358,6 +367,10 @@ ul {
     font-size: 20px;
   }
 
+  .hero-sections {
+    height: 90%;
+  }
+
   .hero-sections > * {
     width: 65vw;
   }
@@ -420,6 +433,10 @@ ul {
     font-size: 0.8rem;
   }
 
+  .about-icon-container {
+    padding: 0 2%;
+  }
+
   .languages-flex {
     justify-content: flex-start;
     min-width: 47.4%;
@@ -465,22 +482,23 @@ ul {
   }
 
   .cards {
-    padding: 114px 24px;
+    padding: 9% 0;
     width: 100vw;
     height: 2700px;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .card {
-    display: flex;
+    display: fle;
     flex-direction: row;
+    flex: auto;
     justify-content: center;
     padding: 16px;
-    margin: 0 146px;
+    margin: 0 9%;
     gap: 12px;
     width: 83%;
     height: 496px;
-    background-color: #fff;
-    border: 1px solid #dfe1e6;
     border-radius: 16px;
   }
 

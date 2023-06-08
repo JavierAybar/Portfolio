@@ -19,9 +19,9 @@
               <img src="images/btn-menu.svg" alt="hamburger button" />
             </button>
             <ul class="toolbar-menu-desktop">
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#portfolio-section-link">Portfolio</a></li>
+              <li><a href="#about-section-link">About</a></li>
+              <li><a href="#contact-section-link">Contact</a></li>
             </ul>
         </nav>
       </section>
@@ -62,6 +62,11 @@
                 </a>
               </li>
               <li>
+                <a href="#">
+                  <img class="social-media-icon" src="images/Medium-icon.svg" alt="medium">
+                </a>
+              </li>
+              <li>
                 <a href="https://github.com/JavierAybar">
                   <img
                     class="social-media-icon"
@@ -70,12 +75,17 @@
                   />
                 </a>
               </li>
+              <li>
+                <a href="#">
+                  <img class="social-media-icon" src="images/Angellist-icon.svg" alt="angellist">
+                </a>
+              </li>
             </ul>
           </section>
         </section>
       </section>
       <!--Works-->
-      <section class="cards-container-flex">
+      <section id="portfolio-section-link" class="cards-container-flex">
         <section class="cards">
           <article class="card">
             <figure class="cards-container-img card-order">
@@ -239,7 +249,7 @@
         </section>
       </section>
       <!--About-->
-      <section class="backgroud-about">
+      <section id="about-section-link" class="backgroud-about">
       <article class="about-sections">
           <h1 class="about-text">About Myself</h1>
           <p class="about-paragraph">
@@ -250,7 +260,7 @@
           </p>
           <p class="about-connect">LET’S CONNECT</p>
           <!--Social Media-->
-          <section class="social-media">
+          <section class="social-media about-icon-container">
             <ul>
               <li>
                 <a href="https://twitter.com/_JavierAybar">
@@ -271,12 +281,22 @@
                 </a>
               </li>
               <li>
+                <a href="#">
+                  <img class="social-media-icon" src="images/Medium-icon.svg" alt="medium">
+                </a>
+              </li>
+              <li>
                 <a href="https://github.com/JavierAybar">
                   <img
                     class="social-media-icon"
                     src="images/Github-icon.svg"
                     alt="GitHub"
                   />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="social-media-icon" src="images/Angellist-icon.svg" alt="angellist">
                 </a>
               </li>
             </ul>
@@ -294,8 +314,8 @@
               <p>Languages</p>
               <figure>
                 <img
-                  class="arrow-icon"
-                  src="images/down.png"
+                  class="arrow-icon arrow-icon-rotate"
+                  src="images/arrow-icon.png"
                   alt="arrow icon"
                 />
               </figure>
@@ -319,20 +339,20 @@
           <li class="active-dropdown">
             <p>Frameworks</p>
             <figure>
-              <img class="arrow-icon" src="images/down.png" alt="arrow icon" />
+              <img class="arrow-icon" src="images/arrow-icon.png" alt="arrow icon" />
             </figure>
           </li>
           <li class="active-dropdown">
             <p>Skills</p>
             <figure>
-              <img class="arrow-icon" src="images/down.png" alt="arrow icon" />
+              <img class="arrow-icon" src="images/arrow-icon.png" alt="arrow icon" />
             </figure>
           </li>
         </ul>
       </section>
     </section>
     <!-- Contact me -->
-    <section class="contact-me__desktop-background">
+    <section id="contact-section-link" class="contact-me__desktop-background">
     <section class="contact-me__container">
       <h2 class="contact-me__title">
         Contact me
