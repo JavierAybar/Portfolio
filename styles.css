@@ -97,8 +97,7 @@ body {
 /* Headline */
 
 .headline-container {
-  background-image: url("images/header-shapes\ mobile.png"),
-    url("images/header-background-mobile.png");
+  background-image: url("images/header-shapes\ mobile.png"), url("images/header-background-mobile.png");
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: contain, cover;
@@ -323,8 +322,7 @@ ul {
 .contact-me__container {
   padding: 90px 24px;
   border-top-left-radius: 90px;
-  background-image: url("images/contact\ form\ shapes-mobile.svg"),
-    url("images/Contact\ me.png");
+  background-image: url("images/contact\ form\ shapes-mobile.svg"), url("images/Contact\ me.png");
   background-size: contain, cover;
   background-position: right;
   background-clip: padding-box, padding-box;
@@ -385,8 +383,7 @@ ul {
 
 @media screen and (min-width: 768px) {
   .headline-container {
-    background-image: url("images/Header-background-shapes-desktop.svg"),
-      url("images/header-background-mobile.png");
+    background-image: url("images/Header-background-shapes-desktop.svg"), url("images/header-background-mobile.png");
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
     background-size: contain, cover;
@@ -588,8 +585,7 @@ ul {
   /* contact-me desktop */
 
   .contact-me__desktop-background {
-    background-image: url("images/desktop-contact-form\ background\ shapes.svg"),
-      url("images/Contact\ me.png");
+    background-image: url("images/desktop-contact-form\ background\ shapes.svg"), url("images/Contact\ me.png");
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
     background-size: contain, cover;
