@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Javier's Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -16,9 +16,9 @@
         </div>
         <nav>
             <button class="btn-hamburger">
-              <img src="images/btn-menu.svg" alt="hamburger button" />
+              <img src="images/btn-menu.svg" alt="hamburger button" aria-label="mobile menu icon" />
             </button>
-            <ul class="toolbar-menu-desktop">
+            <ul class="toolbar-menu-desktop" aria-label="Desktop navigation menu">
               <li><a href="#portfolio-section-link">Portfolio</a></li>
               <li><a href="#about-section-link">About</a></li>
               <li><a href="#contact-section-link">Contact</a></li>
@@ -48,7 +48,7 @@
                   <img
                     class="social-media-icon"
                     src="images/Twitter-icon.svg"
-                    alt="Twitter"
+                    alt="Twitter icon"
                   />
                 </a>
               </li>
@@ -57,7 +57,7 @@
                   <img
                     class="social-media-icon"
                     src="images/Linkedin icon.svg"
-                    alt="Linkedin"
+                    alt="Linkedin icon"
                   />
                 </a>
               </li>
@@ -71,13 +71,13 @@
                   <img
                     class="social-media-icon"
                     src="images/Github-icon.svg"
-                    alt="GitHub"
+                    alt="GitHub icon"
                   />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img class="social-media-icon" src="images/Angellist-icon.svg" alt="angellist">
+                  <img class="social-media-icon" src="images/Angellist-icon.svg" alt="angellist icon">
                 </a>
               </li>
             </ul>
@@ -92,7 +92,7 @@
               <img
                 class="img-card"
                 src="images/SnapshootPortfolio(1).svg"
-                alt=""
+                alt="Project-img"
               />
             </figure>
 
@@ -132,7 +132,7 @@
               <img
                 class="img-card"
                 src="images/Snapshoot Portfolio (2).svg"
-                alt=""
+                alt="Project-img"
               />
             </figure>
 
@@ -172,7 +172,7 @@
               <img
                 class="img-card"
                 src="images/Snapshoot Portfolio (3).svg"
-                alt=""
+                alt="Project-img"
               />
             </figure>
 
@@ -212,7 +212,7 @@
               <img
                 class="img-card"
                 src="images/Snapshoot Portfolio (4).svg"
-                alt=""
+                alt="Project-img"
               />
             </figure>
 
@@ -362,9 +362,14 @@
         I’d love to help with it!
       </p>
       <form action="https://formspree.io/f/mnqykbeb" method="post" class="contact-me__form">
-        <input class="contact-me__form--input" name="name" type="text" maxlength="50" placeholder="Lorem Ipsum" required>
-        <input class="contact-me__form--input" name="email" type="email" placeholder="loremipsum@gmail.com" required>
-        <textarea class="contact-me__form--textarea" name="message" id="" maxlength="500" placeholder="Write your message here..." required></textarea>
+        <label for="name">Name</label>
+        <input class="contact-me__form--input" id="name" name="name" type="text" maxlength="50" placeholder="Lorem Ipsum" required>
+
+        <label for="email">Email</label>
+        <input class="contact-me__form--input" id="email" name="email" type="email" placeholder="loremipsum@gmail.com" required>
+
+        <label for="message">Message</label>
+        <textarea class="contact-me__form--textarea" name="message" id="message" maxlength="500" placeholder="Write your message here..." required></textarea>
         <button class="btn contact-me__btn-desktop">Get in touch</button>
       </form>
     </section>
