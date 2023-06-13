@@ -362,9 +362,14 @@
         I’d love to help with it!
       </p>
       <form action="https://formspree.io/f/mnqykbeb" method="post" class="contact-me__form">
-        <input class="contact-me__form--input" name="name" type="text" maxlength="50" placeholder="Lorem Ipsum" required>
-        <input class="contact-me__form--input" name="email" type="email" placeholder="loremipsum@gmail.com" required>
-        <textarea class="contact-me__form--textarea" name="message" id="" maxlength="500" placeholder="Write your message here..." required></textarea>
+        <label for="name">Name</label>
+        <input class="contact-me__form--input" id="name" name="name" type="text" maxlength="50" placeholder="Lorem Ipsum" required>
+
+        <label for="email">Email</label>
+        <input class="contact-me__form--input" id="email" name="email" type="email" placeholder="loremipsum@gmail.com" required>
+
+        <label for="message">Message</label>
+        <textarea class="contact-me__form--textarea" name="message" id="message" maxlength="500" placeholder="Write your message here..." required></textarea>
         <button class="btn contact-me__btn-desktop">Get in touch</button>
       </form>
     </section>

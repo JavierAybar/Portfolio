@@ -379,6 +379,10 @@ ul {
   margin-bottom: 22px;
 }
 
+label {
+  display: none;
+}
+
 /* Media querys */
 
 @media screen and (min-width: 768px) {
