@@ -80,6 +80,13 @@ After you're finished please remove all the comments and instructions!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+## :movie_camera: WALKTHROUGH
+
+
+- [Walkthrough video](https://www.loom.com/share/1d8d73540ba64dfba054db35f750147b)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
