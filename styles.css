@@ -626,3 +626,43 @@ label {
     height: 19vh;
   }
 }
+
+/* Mobile menu */
+.mobile-menu {
+  background: #6070ff;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(0.5rem);
+  position: fixed;
+  padding: 45px 28px;
+  transition: left 0.5s ease-in-out;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+}
+
+.menu-mobile-active {
+  left: 0;
+}
+
+.mobile-menu-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 20px;
+}
+
+.mobile-menu-option {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 44px;
+  color: #fff;
+}
+
+.menu-x {
+  position: fixed;
+  inset: 4% 0 0 86%;
+}
+
+/* End */
