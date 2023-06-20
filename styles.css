@@ -426,6 +426,10 @@ label {
     width: 100%;
   }
 
+  .mobile-menu {
+    display: none;
+  }
+
   /* About desktop */
 
   .backgroud-about {
