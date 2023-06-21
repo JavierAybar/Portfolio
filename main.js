@@ -157,3 +157,19 @@ cardObjects.forEach((cardData, i) => {
     showPopup(cardData);
   });
 });
+
+// Form validation email //
+
+const formElement = document.getElementById('form');
+const emailImput = document.getElementById('email');
+const paragraphAlert = document.querySelector('.alertMessage');
+
+formElement.addEventListener('submit', (event) => {
+  const pattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/;
+  if (!pattern.test(emailImput.value)) {
+    event.preventDefault();
+    paragraphAlert.textContent = 'the email field has to be in lower case.';
+  } else {
+    paragraphAlert.textContent = '';
+  }
+});
