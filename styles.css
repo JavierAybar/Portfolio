@@ -670,4 +670,159 @@ label {
   inset: 4% 0 0 86%;
 }
 
+/* Popup windows */
+.popup-container {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  background-color: rgba(193, 199, 208, 0.6);
+  backdrop-filter: blur(3px);
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.popup-card {
+  height: 713px;
+  width: 93%;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  margin: auto 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.popup-img-card {
+  width: 100%;
+}
+
+.popup-icon-x {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  inset: -35% 0 0 92%;
+}
+
+.header-popup {
+  height: 19%;
+  margin-top: 5%;
+}
+
+.popup-container-btn {
+  margin-top: 5%;
+}
+
+.header-popup > h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 18px;
+  color: #091e42;
+}
+
+.popup-btn-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.popup-btn {
+  width: 100vw;
+}
+
+.popup-btn > img {
+  padding-left: 10%;
+}
+
+.popup-btn > a {
+  color: #396df2;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.canopy-color {
+  color: #344563;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* Media query Popup window */
+@media screen and (min-width: 768px) {
+  .popup-container {
+    overflow: scroll;
+    max-height: 100%;
+  }
+
+  .popup-card {
+    height: 1100px;
+    width: 82%;
+    position: absolute;
+    margin: 5% 0;
+    padding: 18px;
+  }
+
+  .popup-img-card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .popup-image {
+    width: 100%;
+    height: 580px;
+    margin-top: 2%;
+  }
+
+  .header-popup {
+    height: 8%;
+    margin-top: 2%;
+  }
+
+  .header-popup > ul {
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    justify-content: flex-start;
+    gap: 7%;
+  }
+
+  .popup-icon-x {
+    width: 14px;
+    height: 14px;
+    position: relative;
+    inset: -29px 0 0 96%;
+  }
+
+  .popup-container-footer {
+    display: flex;
+    height: auto;
+    gap: 2%;
+    padding: 5% 0 7% 0;
+  }
+
+  .popup-btn-section {
+    width: 300px;
+  }
+
+  .paragraph-popup {
+    padding: 0% 0;
+  }
+
+  .popup-container-btn {
+    margin: 0;
+  }
+
+  .popup-btn {
+    align-items: center;
+    padding: 8px 12px;
+    gap: 14px;
+    font-size: 13px;
+  }
+}
+
 /* End */
