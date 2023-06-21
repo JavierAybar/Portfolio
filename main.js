@@ -94,8 +94,8 @@ function showPopup(cardData) {
           <li>${cardData.technologies[2]}</li>
         </ul>
         <div class="popup-btn-section">
-          <button class="btn popup-btn"><a href="${cardData.linktoLiveVersion}">See live</a><img src="images/circle-icon-popup.png" alt=""></button>
-          <button class="btn popup-btn"><a href="${cardData.linKToSource}">See source</a><img src="images/githun-icon-popup.png" alt=""></button>
+          <button class="btn popup-btn">See live<a href="${cardData.linktoLiveVersion}"></a><img src="images/circle-icon-popup.png" alt=""></button>
+          <button class="btn popup-btn">See source<a href="${cardData.linKToSource}"></a><img src="images/githun-icon-popup.png" alt=""></button>
         </div>
       </div>
       </div>
