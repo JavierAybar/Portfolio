@@ -826,3 +826,12 @@ label {
 }
 
 /* End */
+.alertMessage {
+  color: #fff;
+  background-color: #0E42A2
+;
+  border: 1px #493DCF
+solid;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
