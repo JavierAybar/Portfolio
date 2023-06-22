@@ -173,3 +173,18 @@ formElement.addEventListener('submit', (event) => {
     paragraphAlert.textContent = '';
   }
 });
+
+// Local storage //
+
+const nameInput = document.getElementById('name');
+const messageInput = document.getElementById('message');
+
+// Save form data in local storage //
+const saveFormData = () => {
+  const formObjects = {
+    name: nameInput.value,
+    email: emailImput.value,
+    message: messageInput.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formObjects));
+};
