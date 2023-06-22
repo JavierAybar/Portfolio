@@ -826,3 +826,14 @@ label {
 }
 
 /* End */
+
+/* Form validation email */
+.alertMessage {
+  color: #fff;
+  background-color: #0e42a2;
+  border: 1px #493dcf solid;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* End */

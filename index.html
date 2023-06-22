@@ -215,7 +215,7 @@
         If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
         I’d love to help with it!
       </p>
-      <form action="https://formspree.io/f/mnqykbeb" method="post" class="contact-me__form">
+      <form action="https://formspree.io/f/mnqykbeb" id="form" method="post" class="contact-me__form">
         <label for="name">Name</label>
         <input class="contact-me__form--input" id="name" name="name" type="text" maxlength="50" placeholder="Lorem Ipsum" required>
 
@@ -224,7 +224,8 @@
 
         <label for="message">Message</label>
         <textarea class="contact-me__form--textarea" name="message" id="message" maxlength="500" placeholder="Write your message here..." required></textarea>
-        <button class="btn contact-me__btn-desktop">Get in touch</button>
+        <p class="alertMessage"></p>
+        <button id="submit" type="submit" class="btn contact-me__btn-desktop">Get in touch</button>
       </form>
     </section>
   </section>
