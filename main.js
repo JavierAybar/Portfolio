@@ -197,6 +197,10 @@ const loadFormData = () => {
     emailImput.value = parseData.email;
     messageInput.value = parseData.message;
   }
-};formElement.addEventListener('input', () => {
+};
+
+formElement.addEventListener('input', () => {
   saveFormData();
-});loadFormData();
+});
+
+loadFormData();
