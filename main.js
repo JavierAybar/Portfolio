@@ -173,3 +173,34 @@ formElement.addEventListener('submit', (event) => {
     paragraphAlert.textContent = '';
   }
 });
+
+// Local storage //
+
+const nameInput = document.getElementById('name');
+const messageInput = document.getElementById('message');
+
+// Save form data in local storage //
+const saveFormData = () => {
+  const formObjects = {
+    name: nameInput.value,
+    email: emailImput.value,
+    message: messageInput.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formObjects));
+};
+
+// Load form data to the inputs //
+const loadFormData = () => {
+  if (localStorage.getItem('formData')) {
+    const parseData = JSON.parse(localStorage.getItem('formData'));
+    nameInput.value = parseData.name;
+    emailImput.value = parseData.email;
+    messageInput.value = parseData.message;
+  }
+};
+
+formElement.addEventListener('input', () => {
+  saveFormData();
+});
+
+loadFormData();
