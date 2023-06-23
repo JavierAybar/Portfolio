@@ -188,3 +188,15 @@ const saveFormData = () => {
   };
   localStorage.setItem('formData', JSON.stringify(formObjects));
 };
+
+// Load form data to the inputs //
+const loadFormData = () => {
+  if (localStorage.getItem('formData')) {
+    const parseData = JSON.parse(localStorage.getItem('formData'));
+    nameInput.value = parseData.name;
+    emailImput.value = parseData.email;
+    messageInput.value = parseData.message;
+  }
+};formElement.addEventListener('input', () => {
+  saveFormData();
+});loadFormData();
