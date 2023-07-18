@@ -21,7 +21,7 @@ const cardObjects = [
     name: 'Aybar Academy',
     description: '-This project is a web about the Aybar Academy (code academy), In this project I show some of my skills learned so far.',
     featuredImage: 'images/Capston-project.png',
-    details: ['Aybar Academy', 'Front-end-skills', '2023'],
+    details: ['Acamedy', 'Fron-end', '2023'],
     technologies: ['HTML', 'CSS', 'JavaScript'],
     linktoLiveVersion: 'https://javieraybar.github.io/Capstone_Project_01/',
     linKToSource: 'https://github.com/JavierAybar/Capstone_Project_01',
@@ -94,8 +94,8 @@ function showPopup(cardData) {
           <li>${cardData.technologies[2]}</li>
         </ul>
         <div class="popup-btn-section">
-          <button class="btn popup-btn">See live<a href="${cardData.linktoLiveVersion}"></a><img src="images/circle-icon-popup.png" alt=""></button>
-          <button class="btn popup-btn">See source<a href="${cardData.linKToSource}"></a><img src="images/githun-icon-popup.png" alt=""></button>
+          <a href="${cardData.linktoLiveVersion}"><button class="btn popup-btn">See live<img src="images/circle-icon-popup.png" alt=""></button></a>
+          <a href="${cardData.linKToSource}"><button class="btn popup-btn">See source<img src="images/githun-icon-popup.png" alt=""></button></a>
         </div>
       </div>
       </div>
