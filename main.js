@@ -18,13 +18,13 @@ menuX.addEventListener('click', toggleMobileMenu);
 const cardObjects = [
 
   {
-    name: 'Tonic',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featuredImage: 'images/SnapshootPortfolio(1).svg',
-    details: ['Canopy', 'Back End Dev', '2015'],
+    name: 'Aybar Academy',
+    description: '-This project is a web about the Aybar Academy (code academy), In this project I show some of my skills learned so far.',
+    featuredImage: 'images/Capston-project.png',
+    details: ['Aybar Academy', 'Front-end-skills', '2023'],
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    linktoLiveVersion: 'https://javieraybar.github.io/Portfolio/',
-    linKToSource: 'https://github.com/JavierAybar/Portfolio',
+    linktoLiveVersion: 'https://javieraybar.github.io/Capstone_Project_01/',
+    linKToSource: 'https://github.com/JavierAybar/Capstone_Project_01',
   },
   {
     name: 'Tonic',
